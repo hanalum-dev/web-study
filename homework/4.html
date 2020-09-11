@@ -4,7 +4,25 @@
     <script>
         document.write("<h1>월화수목금토일</h1>");
         var a = prompt("월화수목금토일 중에서 입력하세요");
-        document.write(a);
+        
+        if(a == null || a == "금"||a == "일") {
+        document.write(a+"은 휴일");
+        }
+        else {
+            if (a == null || a == "토") {
+                document.write(a+"는 휴일");
+            }
+            else {
+                if (a == null || a == "월" || a == "목") {
+                    document.write(a+"은 출근");
+                }
+                else {
+                    document.write(a+"는 출근");
+                }
+            }
+            
+        }
+        
     </script>
 </body>
 </html>
